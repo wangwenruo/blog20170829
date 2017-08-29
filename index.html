@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
-<title>我的第一个页面</title>
 <head>
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="http://typo.sofi.sh/typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    body {padding :16px}
+    
+    </style>
+  </head>
 <body>
-  这是内容
+  <div id="content">
+    
+  </div>
+
+  <script>
+    var markdawn=`
+# 我的第一个博客
+## 作者 **文渃**.
+> 坚持就是胜利 。
+
+今天是我第一次写博客。
+![](https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1330594068,1466051240&fm=26&gp=0.jpg)
+
+`
+
+   
+   
+    var html= marked(markdawn)
+      console.log(html)
+     document.getElementById('content').innerHTML =html
+     
+  </script>
+  
 </body>
 </html>
