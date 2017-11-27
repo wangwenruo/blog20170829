@@ -3,33 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>文渃</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
   <link rel="stylesheet" href="http://typo.sofi.sh/typo.css">
+  <link rel="stylesheet" href="css/index.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <style>
-    body {padding :16px}
-    
-    </style>
+  
   </head>
 <body>
-  <div id="content">
+	<div style="height:15%;background:#eceef0">
+		<h1>
+  	<a id="Header1_HeaderTitle" class="headermaintitle" href="#">文渃</a></h1>
+  <h2 style="display: inline-block;">坚持就是胜利</h2>
+	<div id="navigator" style="display: inline-block;">
+		
+<ul id="navList" style="display: flex;position: absolute;right: 20px;">
+<li class="blogStats"><a id="blog_nav_sitehome" class="menu" href="#">博客</a></li>
+<li class="blogStats"><a id="blog_nav_myhome" class="menu" href="#">首页</a></li>
+<li class="blogStats"><a id="blog_nav_newpost" class="menu" rel="nofollow" href="#">新随笔</a></li>
 
+<li class="blogStats"><a id="blog_nav_rss" class="menu" href="#">文章</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/chanshuyi/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li class="blogStats"><a id="blog_nav_admin" class="menu" rel="nofollow" href="#">管理</a></li>
+</ul>
+
+</div>
+	</div>
+  <!--end: navigator 博客导航栏 -->
+  <div class="clock">
+  	<div class="box">
+<div class="kedu">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+<div class="disc">
+<div class="hour"></div>
+<div class="minu"></div>
+<div class="second"></div>
+<div class="cover"></div>
+</div>
+<div class="middisc">
+</div>
+</div>
+  	
+  	
   </div>
-
-  <script>
-    var markdawn=`
-# 我的第一个博客
-## 作者 **文渃**.
-> 坚持就是胜利 。
-
-今天是我第一次写博客。
-`
-    var html= marked(markdawn)
-      console.log(html)
-     document.getElementById('content').innerHTML =html
-     
-  </script>
-  
 </body>
 </html>
